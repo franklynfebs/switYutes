@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWIT_YUTES</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for the banner */
+    .banner {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+  
+    
+    /* Call-to-action button style */
+    .btn-action{
+      position: absolute;
+      bottom: 1em;
+      right: 5em;
+      background-color: #C94B2B;
+      border: none;
+      transition: all 0.3s ease;
+      animation: shake 0.5s infinite alternate; /* Shake animation */
+    }
+
+     /* Button shaking animation */
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-5px); }
+      50% { transform: translateX(5px); }
+      75% { transform: translateX(-5px); }
+      100% { transform: translateX(0); }
+    }
+    .shaking {
+      animation: shake 0.5s infinite; /* Start shaking animation */
+    }
+    /* Sparkles animation */
+    @keyframes sparkles {
+      0% { transform: translateY(0) rotate(0); opacity: 1; }
+      100% { transform: translateY(-50px) rotate(360deg); opacity: 0; }
+    }
+    .sparkles {
+      animation: sparkles 1s ease-out forwards; /* Start sparkles animation */
+    }
+
+    .btn-action:hover {
+      background-color:#0D7689; /* Hover button color */
+      animation: none; /* Disable shaking animation on hover */
+    }
+
+   /* Responsive button styling */
+@media (max-width: 768px) {
+  .btn-action {
+    font-size: 1rem; /* Adjust font size */
+    padding: 1% 2em; /* Adjust padding */
+    bottom: 2%; /* Adjust bottom spacing */
+    right: 2%; /* Adjust right spacing */
+  }
+}
+  </style>
+</head>
+<body>
+
+<div class="banner">
+  <!-- Image -->
+  <img src="web_banners\web_banner.png" class="img-fluid" alt="Web Banner">
+
+  <!-- Call-to-action button -->
+  <a href="bannerVid.html" id="cta-btn" class="btn btn-primary btn-lg btn-action">CONTACT US</a>
+</div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Get the button element
+  const ctaBtn = document.getElementById('cta-btn');
+
+  // Function to add shaking class to button
+  function startShaking() {
+    ctaBtn.classList.add('shaking');
+  }
+
+  // Function to remove shaking class from button and add sparkles class
+  function stopShaking() {
+    ctaBtn.classList.remove('shaking');
+    ctaBtn.classList.add('sparkles');
+  }
+
+  // Event listener to start shaking animation on mouse over
+  ctaBtn.addEventListener('mouseover', startShaking);
+
+  // Event listener to stop shaking animation and add sparkles on click
+  ctaBtn.addEventListener('click', stopShaking);
+</script>
+</body>
+</html>
