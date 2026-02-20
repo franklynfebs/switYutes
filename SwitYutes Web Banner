@@ -1,0 +1,88 @@
+🎉 Swit Yutes – Funky Friday Interactive Web Banner
+
+An interactive promotional web banner designed for Swit Yutes to help users easily access and purchase tickets for the Funky Friday event.
+
+This banner serves as a digital marketing tool that drives engagement, increases event visibility, and simplifies the ticket acquisition process.
+
+🚀 Project Overview
+
+The Swit Yutes Web Banner is built to:
+
+Promote the Funky Friday event
+
+Capture user attention with interactive elements
+
+Redirect users to ticket purchase platforms
+
+Increase event awareness and conversions
+
+The banner can be embedded on websites, landing pages, or shared across digital platforms.
+
+🎯 Key Features
+
+Interactive call-to-action (CTA) buttons
+
+Smooth animations and hover effects
+
+Responsive design (mobile & desktop friendly)
+
+Event branding integration
+
+Direct ticket purchase redirection
+
+🛠️ Tech Stack
+
+HTML5
+
+CSS3
+
+JavaScript
+
+Optional: Animation libraries (e.g., GSAP / AOS)
+
+📂 Installation & Usage
+1️⃣ Clone the Repository
+git clone https://github.com/yourusername/swit-yutes-banner.git
+cd swit-yutes-banner
+2️⃣ Open in Browser
+
+Simply open the index.html file in your browser.
+
+OR
+
+Use Live Server (VS Code extension) for development.
+
+📌 How It Works
+
+User views the banner on a website.
+
+User interacts with animated elements.
+
+User clicks the Get Tickets button.
+
+User is redirected to the Funky Friday ticket page.
+
+📸 Customization
+
+You can easily update:
+
+Event name
+
+Date & time
+
+Background images
+
+Brand colors
+
+Ticket link URL
+
+All customizable inside the HTML/CSS files.
+
+🧠 Purpose
+
+This project was created to digitally promote the Funky Friday event and increase engagement among the Swit Yutes community through a modern web-based promotional asset.
+
+📄 License
+
+This project is for promotional use by Swit Yutes.
+All event branding rights belong to the respective organizers.
